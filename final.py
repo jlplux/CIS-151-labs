@@ -121,10 +121,11 @@ else:
 
 print("Compression accuracy:", round(accuracy, 2), "%")
 
-# Compression radio check
+# Compression ratio check
 original_bits = len(text) * 8
 compressed_bits = len(compressed)
 if original_bits > 0:
     reduction = 100 * (1 - compressed_bits / original_bits)
     print("Bit reduction:", round(reduction, 2), "%")
+
 
