@@ -103,7 +103,7 @@ for bit in compressed:
             buffer = ""
             break
 
-if buffer:  # leftover b
+if buffer:  # leftover buffer
     decompressed += "#"
 
 print("Decompressed text:", decompressed)
@@ -127,3 +127,4 @@ compressed_bits = len(compressed)
 if original_bits > 0:
     reduction = 100 * (1 - compressed_bits / original_bits)
     print("Bit reduction:", round(reduction, 2), "%")
+
